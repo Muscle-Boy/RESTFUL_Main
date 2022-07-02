@@ -8,7 +8,6 @@ def RESTFUL():
         return render_template('index.html')
 
     elif request.method == 'POST':
-        text = request.form['texts']     # request.form converts data to python dictionary already
         response = request.post(url="http://nameOfTheService:8010/backend")
         return render_template('index.html', content=response.text)
 
