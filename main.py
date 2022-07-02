@@ -10,6 +10,7 @@ def RESTFUL():
     elif request.method == 'POST':
         text = request.form['texts']     # request.form converts data to python dictionary already
         response = request.post(url="http://nameOfTheService:8010/backend")
+        return render_template('index.html', content=response.text)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8000)
