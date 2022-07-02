@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: main
-        image: ryanangweihao/rang012_docker_repository:main-13b0d23
+        image: ryanangweihao/rang012_docker_repository:main-d6a1b66
         ports:
         - containerPort: 8000
       imagePullSecrets:
