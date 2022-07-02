@@ -8,7 +8,7 @@ def RESTFUL():
         return render_template('index.html')
 
     elif request.method == 'POST':
-        response = request.post(url="http://nameOfTheService:8010/backend")
+        response = request.post(url="http://backend-service:8010/backend")
         return render_template('index.html', content=response.text)
 
 if __name__ == "__main__":
