@@ -19,7 +19,7 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v5
       name: Build & push Docker image
       with:
-        image: tegexplore/pda-2022
+        image: pdacentraldockerhub/pda_central_repo
         tags: RYAN_MAIN_RESTFUL
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
