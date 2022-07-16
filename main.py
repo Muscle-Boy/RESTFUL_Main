@@ -32,7 +32,7 @@ def RESTFUL():
         # Pulling/Retrieving Data from MongoDB Database via its collection
         texts=[]
         for x in information.find({"Type":"Text"}):
-            text = x["text"]
+            text = x["Text"]
             texts.append(text)
             
         return render_template('index.html', content=texts[len(texts)-1])
