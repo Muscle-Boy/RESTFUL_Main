@@ -5,7 +5,7 @@ metadata:
   labels:
     app: main-server
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: main-server
@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
       - name: main
-        image: ryanangweihao/rang012_docker_repository:main-d4a8f7b
+        image: .....
         ports:
-        - containerPort: 8000
+        - containerPort: 9000
       imagePullSecrets:
-      - name: regcred
+      - name: dockercred
