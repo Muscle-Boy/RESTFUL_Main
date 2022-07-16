@@ -8,6 +8,6 @@ spec:
     app: main-server
   ports:
     - protocol: TCP
-      port: 5000      
-      targetPort: 8000
+      port: 6000      
+      targetPort: 9000
       nodePort: 31000
