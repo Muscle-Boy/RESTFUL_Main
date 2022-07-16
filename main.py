@@ -24,8 +24,8 @@ def RESTFUL():
         
         # Inserting Data into MongoDB Database via its collection
         record = [{
-            "Type":"Text"
-            "text":response.text                      # "response.text" extracts the text data from the REST API RESPONSE
+            "Type": "Text"
+            "Text": str(response.text)                      # "response.text" extracts the text data from the REST API RESPONSE
         }]        
         information.insert_many(record)
         
